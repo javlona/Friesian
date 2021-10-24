@@ -17,6 +17,9 @@ button{
     outline: none;
     border: none;
 }
+img{
+    vertical-align: middle;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -172,7 +175,7 @@ header::after{
     position: absolute;
     content: "";
     top: 0;
-    left: 14%;
+    left: 14.2%;
 }
 .left-img img{
     vertical-align: middle;
