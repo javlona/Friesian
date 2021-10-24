@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+.btn-prime{
+    padding: 8px 25px;
+    background: #166111;
+    color: #eee;
+}
+header{
+    height: 110vh;
+    width: 100vw;
+    position: relative;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: rgb(109,217,101);
+    background: linear-gradient(144deg, rgba(109,217,101,1) 0%, rgba(12,134,3,1) 100%);
+    z-index: -10;
+}
+
+.navbar{
+    height: 67px;
+    /* position: absolute; */
+    z-index: 10;
+}
+.navbar .container{
+    width: 80%;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 1;
+}
+.navbar .nav-links{
+    display: flex;
+    /* margin-left: 50px; */
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #eee;
+}
+
+.nav-links li{
+    margin-right: 20px;
+}
+.nav-links li a{
+    color: #eee;
+}
+
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.hero .container{
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+}
+.hero .left-hero{
+    max-width: 40%;
+    margin-left: 40px;
+    position: relative;
+}
+.hero .left-hero h1{
+    font-size: 3.5vw;
+    color: #eee;
+    text-transform: uppercase;
+}
+.hero .left-hero p{
+    color: #eee;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.hero .left-hero h1::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 10vw;
+    height: 10px;
+    background: #eee;
+}
+.hero .right-hero{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* justify-self: flex-end;
+    align-self: flex-end; */
+}
+.hero .right-hero img{
+    vertical-align: middle;
+    width: 50vw;
+}
+.spacer{
+    width: 150%;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top: 18%;
+}
+
+/* =======PRESIDENT======= */
+.president{
+    position: relative;
+    width: 100%;
+
+}
+.top-text{
+    width: 100%;
+    background: #052A24;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+}
+.top-text-left, .learn-left, .learn-right, .value-left{
+    width: 500px;
+}
+.top-text-float{
+    width: 500px;
+    padding: 40px;
+}
+.top-text-float p{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 2;
+    margin-bottom: 20px;
+    letter-spacing: 1.1;
+}
+.top-text-float p.pres-text{
+    color: #548D33;
+    font-size: 14px;
+}
+.top-text-float h2{
+    font-size: 15px;
+}
+.left-img{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 14%;
+}
+.left-img img{
+    vertical-align: middle;
+    width: 36vw;
+}
+
+/* ========LEARN-MORE======== */
+.learn-more{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: flex-end;
+}
+.learn-right{
+    padding: 40px 85px;
+    z-index: 20;
+}
+.h1-prime{
+    color: #022620;
+    text-transform: uppercase;
+    letter-spacing: 1.1;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.p-prime{
+    color: #022620;
+    margin-bottom: 60px;
+    z-index: 25;
+    opacity: .7;
+}
+.learn-right::before{
+    position: absolute;
+    content: "";
+    top:0;
+    height: 20vh;
+    width: 30vw;
+    right: 0;
+    background-image: radial-gradient(#888 20%, transparent 20%), radial-gradient(#eee 20%, transparent 20%);
+    background-color: #fff;
+    background-position: 0 0, 50px 50px;
+    background-size: 40px 40px;
+    transition: .3s ease;
+}
+.left-img::after{
+    position: absolute;
+    content: "";
+    bottom:-50vh;
+    height: 50vh;
+    width: 25vw;
+    left: 0;
+    background-image: radial-gradient(rgba(84, 141, 51, .5) 20%, transparent 20%), radial-gradient(#eee 20%, transparent 20%);
+    background-color: transparent;
+    background-position: 0 0, 50px 50px;
+    background-size: 40px 40px;
+    transition: .3s ease;
+    z-index: -1;
+}
+
+/* =========VALUE=========== */
+.value{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    align-items: center;
+}
+.value-left{
+    margin-right: 10vw;
+    padding-left: 40px;
+}
+
+/* =======INDUSTRY========== */
+.industry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F2F7EF;
+    padding: 100px 0;
+}
+.industry h2{
+    margin-bottom:60px;
+}
+.icon-holder{
+    padding: 20px 20px;
+    max-width: 1250px;
+}
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon li{
+    flex-basis: 160px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s ease-out;
+}
+.icon i, .icon p{
+    color: #166111;
+}
+.icon p{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.icon i{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.icon li:hover{
+    transform: translateY(-10px) scale(1.2);
+    transition: .3s ease;
+}
+
+
+
+
+
+/* ======ANIMATION======== */
+:root{
+    --hover: #548D33;
+    --white: #fff;
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.pulse-white:hover,
+.pulse-white:focus {
+  -webkit-animation: pulse-white .5s;
+          animation: pulse-white .5s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse-white {
+  0% {
+    box-shadow: 0 0 0 0 var(--white);
+  }
+}
+
+@keyframes pulse-white {
+  0% {
+    box-shadow: 0 0 0 0 var(--white);
+  }
+}
