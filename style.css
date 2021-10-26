@@ -263,7 +263,7 @@ header::after{
 }
 .icon-holder{
     padding: 20px 20px;
-    max-width: 1250px;
+    max-width: 1300px;
 }
 .icon{
     display: flex;
@@ -271,7 +271,7 @@ header::after{
     justify-content: center;
 }
 .icon li{
-    flex-basis: 160px;
+    flex-basis: 140px;
     height: 200px;
     text-align: center;
     border: 1px solid rgb(192, 192, 192);
