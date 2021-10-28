@@ -62,7 +62,7 @@ header::after{
     margin: 0;
     z-index: 1;
 }
-.navbar .nav-links{
+.nav-links{
     display: flex;
     /* margin-left: 50px; */
 }
@@ -302,7 +302,6 @@ header::after{
 .cards{
 /* width: 1250px; */
 position: relative;
-
 margin-bottom: 50px;
 }
 
@@ -417,6 +416,20 @@ font-size: 1.5em;
     justify-content: center;
     padding: 0 40px;
 }
+.quote-left::before{
+    position: absolute;
+    content: "";
+    top: -5vh;
+    height: 40vh;
+    width: 25vw;
+    left: -60px;
+    background-image: radial-gradient(rgba(84, 141, 51, .5) 20%, transparent 20%), radial-gradient(#eee 20%, transparent 20%);
+    background-color: transparent;
+    background-position: 0 0, 50px 50px;
+    background-size: 40px 40px;
+    transition: .3s ease;
+    z-index: -1;
+}
 .quote-left .container{
     /* max-width: 70%; */
     display: flex;
@@ -427,21 +440,26 @@ font-size: 1.5em;
     right: 0;
 }
 .quote-right img{
-    width: 50vw;
+    width: 40vw;
 }
 .get-quote p, .get-quote h1{
     margin-bottom: 20px;
     color: #eee;
 }
 
+/* ====== Footer ======= */
 
-    
-    
-    
-    
-    
-    
-    
+footer{
+    background: #052A24;
+    color: #eee;
+}
+footer .container{
+    justify-content: space-between;
+    padding: 50px 60px;
+} 
+footer .nav-links a{
+    font-size: 14px;
+}    
 
 
 
