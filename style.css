@@ -1,25 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+/* --- General --- */
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
 a{
     text-decoration: none;
 }
+
 li{
     list-style: none;
 }
+
 button{
     outline: none;
     border: none;
 }
+
 img{
     vertical-align: middle;
 }
+
 .container{
     display: flex;
     justify-content: center;
@@ -27,11 +38,13 @@ img{
     margin: 0 auto;
     padding: 20px 40px;
 }
+
 .btn-prime{
     padding: 8px 25px;
     background: #166111;
     color: #eee;
 }
+
 header{
     height: 110vh;
     width: 100vw;
@@ -40,6 +53,7 @@ header{
     display: flex;
     flex-direction: column;
 }
+
 header::after{
     content: "";
     position: absolute;
@@ -52,20 +66,27 @@ header::after{
     z-index: -10;
 }
 
+
+/* --- Navbar --- */
+
+
 .navbar{
     /* position: absolute; */
     z-index: 10;
 }
+
 .navbar .container{
     width: 80%;
     justify-content: space-between;
     margin: 0;
     z-index: 1;
 }
+
 .nav-links{
     display: flex;
     /* margin-left: 50px; */
 }
+
 .logo{
     font-size: 30px;
     font-weight: 700;
@@ -75,9 +96,14 @@ header::after{
 .nav-links li{
     margin-right: 20px;
 }
+
 .nav-links li a{
     color: #eee;
 }
+
+
+/* --- Hero --- */
+
 
 .hero{
     height: 100%;
@@ -87,22 +113,26 @@ header::after{
     padding: 0;
     margin: 0;
 }
+
 .hero .container{
     padding: 0;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
 }
+
 .hero .left-hero{
     max-width: 40%;
     margin-left: 40px;
     position: relative;
 }
+
 .hero .left-hero h1{
     font-size: 3.5vw;
     color: #eee;
     text-transform: uppercase;
 }
+
 .hero .left-hero p{
     color: #eee;
     font-size: 16px;
@@ -119,30 +149,36 @@ header::after{
     height: 10px;
     background: #eee;
 }
+
 .hero .right-hero{
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .hero .right-hero img{
     vertical-align: middle;
     width: 50vw;
 }
+
 /* Long white line below navbar */
 .spacer{
-    width: 150%;
+    width: 100%;
     height: 40px;
     background: #fff;
     position: absolute;
     top: 18%;
 }
 
-/* =======PRESIDENT======= */
+
+/* --- President --- */
+
+
 .president{
     position: relative;
     width: 100%;
-
 }
+
 .top-text{
     width: 100%;
     background: #052A24;
@@ -150,13 +186,16 @@ header::after{
     display: flex;
     justify-content: center;
 }
+
 .top-text-left, .learn-left, .learn-right, .value-left{
     width: 500px;
 }
+
 .top-text-float{
     width: 500px;
     padding: 40px;
 }
+
 .top-text-float p{
     font-size: 14px;
     font-style: italic;
@@ -164,25 +203,32 @@ header::after{
     margin-bottom: 20px;
     letter-spacing: 1.1;
 }
+
 .top-text-float p.pres-text{
     color: #548D33;
     font-size: 14px;
 }
+
 .top-text-float h2{
     font-size: 15px;
 }
+
 .left-img{
     position: absolute;
     content: "";
     top: 0;
     left: 14.2%;
 }
+
 .left-img img{
     vertical-align: middle;
     width: 36vw;
 }
 
-/* ========LEARN-MORE======== */
+
+/* --- Learn More --- */
+
+
 .learn-more{
     width: 100%;
     position: relative;
@@ -191,10 +237,12 @@ header::after{
     height: 100vh;
     align-items: flex-end;
 }
+
 .learn-right{
     padding: 40px 85px;
     z-index: 20;
 }
+
 .h1-prime{
     color: #022620;
     text-transform: uppercase;
@@ -209,6 +257,7 @@ header::after{
     z-index: 25;
     opacity: .7;
 }
+
 .learn-right::before{
     position: absolute;
     content: "";
@@ -222,6 +271,7 @@ header::after{
     background-size: 40px 40px;
     transition: .3s ease;
 }
+
 .left-img::after{
     position: absolute;
     content: "";
@@ -237,19 +287,26 @@ header::after{
     z-index: -1;
 }
 
-/* =========VALUE=========== */
+
+/* --- Value --- */
+
+
 .value{
     display: flex;
     justify-content: flex-end;
     margin-top: 60px;
     align-items: center;
 }
+
 .value-left{
     margin-right: 10vw;
     padding-left: 40px;
 }
 
-/* =======INDUSTRY========== */
+
+/* --- Industry --- */
+
+
 .industry{
     display: flex;
     justify-content: center;
@@ -258,18 +315,22 @@ header::after{
     background: #F2F7EF;
     padding: 100px 0;
 }
+
 .industry h2{
     margin-bottom:60px;
 }
+
 .icon-holder{
     padding: 20px 20px;
     max-width: 1300px;
 }
+
 .icon{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .icon li{
     flex-basis: 140px;
     height: 200px;
@@ -280,24 +341,30 @@ header::after{
     flex-direction: column;
     transition: .3s ease-out;
 }
+
 .icon i, .icon p{
     color: #166111;
 }
+
 .icon p{
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
 }
+
 .icon i{
     font-size: 35px;
     margin-bottom: 35px;
 }
+
 .icon li:hover{
     transform: translateY(-10px) scale(1.2);
     transition: .3s ease;
 }
 
-/* =============CARDS SECTION================== */
+
+/* --- Cards --- */
+
 
 .cards{
 /* width: 1250px; */
@@ -394,18 +461,23 @@ color: #fff;
 text-align: center;
 font-size: 1.5em;
 }
+
 .dots{
     display: block;
     text-align: center;
-
 }
-/* ==========QUOTE=============== */
+
+
+/* --- Quote --- */
+
+
 .get-quote{
     margin-top: 40px;
     display: flex;
     position: relative;
     height: 80vh;
 }
+
 .quote-left{
     background: rgb(109,217,101);
     background: linear-gradient(144deg, rgba(109,217,101,1) 0%, rgba(12,134,3,1) 100%);
@@ -416,6 +488,7 @@ font-size: 1.5em;
     justify-content: center;
     padding: 0 40px;
 }
+
 .quote-left::before{
     position: absolute;
     content: "";
@@ -430,44 +503,50 @@ font-size: 1.5em;
     transition: .3s ease;
     z-index: -1;
 }
+
 .quote-left .container{
     /* max-width: 70%; */
     display: flex;
 }
+
 .quote-right{
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
 .quote-right img{
     width: 40vw;
 }
+
 .get-quote p, .get-quote h1{
     margin-bottom: 20px;
     color: #eee;
 }
 
-/* ====== Footer ======= */
+
+/* --- Footer --- */
+
 
 footer{
     background: #052A24;
     color: #eee;
 }
+
 footer .container{
     justify-content: space-between;
     padding: 50px 60px;
-} 
+}
+
 footer .nav-links a{
     font-size: 14px;
-}    
+}
+
+
+/* --- Card-Animation --- */
 
 
 
-
-
-
-
-/* ======ANIMATION======== */
 :root{
     --hover: #548D33;
     --white: #fff;
@@ -479,6 +558,10 @@ footer .nav-links a{
           animation: pulse 1s;
   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
+
+
+/* --- Responsive --- */
+
 
 @-webkit-keyframes pulse {
   0% {
